@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ProjectManager</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <%= javascript_importmap_tags %>
+    <nav class="navbar navbar-light bg-light justify-content-between container">
+    <a class="navbar-brand">Navbar</a>
+    <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search"
+    placeholder="Search" aria-label="Search" name="state">
+    <button class="btn btn-outline-success my-2 my-sm-0"
+    type="submit">Search</button>
+    </form>
+    </nav>
+
+  </head>
+
+  <body class = container>
+    <%= yield %>
+  </body>
+</html>
